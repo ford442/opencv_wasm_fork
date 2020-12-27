@@ -137,7 +137,7 @@ class Builder:
                "-DBUILD_opencv_python2=OFF",
                "-DBUILD_opencv_python3=OFF",
                "-DBUILD_EXAMPLES=OFF",
-               "-DBUILD_PACKAGE=OFF",
+               "-DBUILD_PACKAGE=ON",
                "-DBUILD_TESTS=OFF",
                "-DBUILD_PERF_TESTS=OFF"]
         if self.options.cmake_option:
