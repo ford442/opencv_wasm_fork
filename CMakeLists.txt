@@ -6,6 +6,8 @@
 #
 # ----------------------------------------------------------------------------
 
+set(OPENCV_LINKER_LIBS ${OPENCV_LINKER_LIBS} ${PNG_LIBRARY} ${JPEG_LIBRARY} ${TIFF_LIBRARY})
+
 # Disable in-source builds to prevent source tree corruption.
 if(" ${CMAKE_SOURCE_DIR}" STREQUAL " ${CMAKE_BINARY_DIR}")
   message(FATAL_ERROR "

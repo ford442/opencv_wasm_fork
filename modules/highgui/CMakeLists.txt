@@ -5,6 +5,8 @@ else()
   ocv_add_module(highgui opencv_imgproc opencv_imgcodecs OPTIONAL opencv_videoio WRAP python java)
 endif()
 
+#ocv_define_module(highgui opencv_imgproc opencv_imgcodecs OPTIONAL opencv_videoio WRAP python java js)
+
 # ----------------------------------------------------------------------------
 #  CMake file for highgui. See root CMakeLists.txt
 #   Some parts taken from version of Hartmut Seichter, HIT Lab NZ.

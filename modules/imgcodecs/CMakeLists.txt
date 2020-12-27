@@ -1,5 +1,7 @@
 set(the_description "Image I/O")
-ocv_add_module(imgcodecs opencv_imgproc WRAP java objc python)
+
+#ocv_add_module(imgcodecs opencv_imgproc WRAP java objc python)
+ocv_define_module(imgcodecs opencv_imgproc WRAP java objc python js)
 
 # ----------------------------------------------------------------------------
 #  CMake file for imgcodecs. See root CMakeLists.txt
@@ -145,7 +147,7 @@ source_group("Include" FILES ${imgcodecs_ext_hdrs})
 ocv_set_module_sources(HEADERS ${imgcodecs_ext_hdrs} SOURCES ${imgcodecs_srcs} ${imgcodecs_hdrs} ${grfmt_srcs} ${grfmt_hdrs})
 ocv_module_include_directories()
 
-ocv_create_module(${GRFMT_LIBS} ${IMGCODECS_LIBRARIES})
+#ocv_create_module(${GRFMT_LIBS} ${IMGCODECS_LIBRARIES})
 
 macro(ocv_imgcodecs_configure_target)
 if(APPLE)
